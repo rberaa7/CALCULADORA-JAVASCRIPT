@@ -1,13 +1,19 @@
 body {
   font-family: 'Press Start 2P', cursive;
   transition: background-color 0.5s, color 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
 }
 .titulo {
-  font-size: 2.8rem;
+  font-size: 5rem;
   letter-spacing: 1px;
   animation: fadeDown 1s ease-out forwards;
-  margin-bottom: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .boton {
@@ -31,10 +37,12 @@ body.dark .pantalla {
 body.light {
   background-color: #76e4f7;
   color: black;
+  background: linear-gradient(to right, #ecfdff, #76e4f7);
 }
 
 body.dark {
   background-color: #1a202c;
+  background: linear-gradient(to right, #1a202c, #2d384d, #32415a);
   color: white;
 }
 .portfolio-text {
