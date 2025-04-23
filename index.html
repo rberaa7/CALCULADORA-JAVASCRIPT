@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculadora</title>
+  <title>Calculadora Cientifica</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
@@ -19,12 +19,25 @@
       <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-all duration-300 peer-checked:translate-x-5"></div>
     </label>
   </div>
-  <h1 class="titulo">CALCULADORA</h1>
+  <h1 class="titulo">CALCULADORA CIENTIFICA</h1>
   <!-- Calculadora -->
   <div class="bg-zinc-800 border-4 border-black p-4 rounded-lg shadow-lg">
     <div class="pantalla flex items-center justify-end px-2 mb-4">
       <input id="pantalla" disabled class="w-full bg-transparent outline-none text-right" />
     </div>
+    <!-- Botones Científicos -->
+    <div class="grid grid-cols-4 gap-2 mb-4">
+      <button class="boton" onclick="insertar('sin(')">sin</button>
+      <button class="boton" onclick="insertar('cos(')">cos</button>
+      <button class="boton" onclick="insertar('tan(')">tan</button>
+      <button class="boton" onclick="insertar('log(')">log</button>
+
+      <button class="boton" onclick="insertar('sqrt(')">√</button>
+      <button class="boton" onclick="insertar('^')">x<sup>y</sup></button>
+      <button class="boton" onclick="insertar('pi')">π</button>
+      <button class="boton" onclick="insertar('e')">e</button>
+    </div>
+
     <div class="grid grid-cols-4 gap-2">
       <!-- Botones -->
       <button class="boton" onclick="insertar('1')">1</button>
